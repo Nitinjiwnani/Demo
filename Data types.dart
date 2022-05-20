@@ -17,8 +17,8 @@ void main() {
   bool isValid = true;
   var isAlive = false;
 
-  print(score);
-  print(isValid);
+  print(hexValue);
+  print(exponents);
 
   //NOTE: all data types in dart are Objects
   //Therefore, thier initial value is by default Null
