@@ -1,25 +1,30 @@
 void main() {
-  //  Numbers: int
-  int score = 23;
-  var count = 23; //it is inferred as integer automatically by compiler
-  int hexValue = 0xEADEBAEE;
+  //Literals
+  var isCool = true;
+  int x = 2;
+  "john";
+  4.5; //These are all literals and can  be assigned to some variables
 
-  //numbers: double
-  double percentage = 93.4;
-  var percent = 82.222;
-  double exponents = 1.42e5;
+  //Various ways to define string literals in dart
+  String s1 = 'Single';
+  String s2 = "Double";
+  String s3 = 'It\'s easy'; //'It's easy';
+  String s4 = "It's easy";
 
-  //Strings
-  String name = "Henry";
-  var company = "Google";
+  String s5 =
+      //'The code should be within  the margin and should not cross it, to overcome it we use plus';
+      'The code should be within  the margin and should not cross it,' //Using plus is bad practice so there's flexibility of not using it
+      'to overcome it we use plus';
 
-  //Boolean
-  bool isValid = true;
-  var isAlive = false;
+  // String Interpolation
+  String name = "Kevin";
 
-  print(hexValue);
-  print(exponents);
+  print("My name is $name"); // we use it to avoid print("My name is" + name);
+  print("The number of characters in string Kevin is ${name.length}");
 
-  //NOTE: all data types in dart are Objects
-  //Therefore, thier initial value is by default Null
+  int l = 20;
+  int b = 10;
+
+  print("The sum of $l and $b is ${l + b} ");
+  print("The area of rec with length $l and breadth $b is ${l * b}");
 }
