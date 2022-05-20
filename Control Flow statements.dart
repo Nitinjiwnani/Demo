@@ -1,12 +1,20 @@
 void main() {
-  // IF and ELSE statements
+  //Conditional expressions
 
-  var salary = 15000;
+  //1. condition ? exp1 : exp2
 
-  if (salary > 20000) {
-    print("You got promotion, congratulations!");
-  }
-  else{
-    print("You need to work hard");
-  }
+  int a = 2;
+  int b = 3;
+
+  int smallNumber = a < b ? a : b;
+  print("$smallNumber is smaller");
+
+  //2. exp1 ?? exp2
+  // If exp1 is non null, return its value; otherwise, evaluates and returns
+  // the value of exp2
+
+  // String name = null;
+
+  // String nametoPrint = name ?? "Guest user";
+  // print(nametoPrint);
 }
